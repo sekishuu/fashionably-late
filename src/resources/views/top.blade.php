@@ -13,11 +13,6 @@
 
 <body>
     <header class="header">
-        <div class="header__inner">
-            <a class="header__logo" href="/">
-                FashionablyLate
-            </a>
-        </div>
         @if (Auth::check())
             <form class="form" action="/logout" method="post">
             @csrf
@@ -29,11 +24,21 @@
                 <button class="header-nav__button">login</button>
             </form>
         @endif
+        <div class="header__inner">
+            <a class="header__logo" href="/">
+                FashionablyLate
+            </a>
+        </div>
+        <div class="contact">
+            <a href="">Contact</a></div>
+        <div class="login">
+            <a href="">Login</a>
+        </div>
+        <div class="register">
+            <a href="">Register</a>
+        </div>
     </header>
 
-    <main>
-        @yield('content')
-    </main>
 </body>
 
 </html>

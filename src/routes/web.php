@@ -15,8 +15,11 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::get('/', [ContactController::class, 'index']);
+Route::get('/', [ContactController::class, 'index'])->middleware(['auth']);
 Route::post('/contacts/confirm', [ContactController::class, 'confirm']);
 Route::post('/contacts', [ContactController::class, 'store']);
 
-Route::get('/', [AuthController::class, 'index']);
+// Route::middleware('auth')->group(function () {
+//     Route::get('/', [AuthController::class, 'index']);
+// });
+

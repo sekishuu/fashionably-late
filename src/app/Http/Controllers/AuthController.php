@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
-    public function index()
+        public function index()
     {
-        return view('index');
+        $authors = Author::Paginate(7)->onEachSide(5);
+        return view('admin', ['authors' => $authors]);
     }
 }
