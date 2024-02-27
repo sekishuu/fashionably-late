@@ -12,6 +12,6 @@
           6. php artisan migrate
           
     - 使用技術
-      -　php:7.4.9
-      -　Laravel Framework 8.83.8
-      -　mysql:8.0.26
+        - php:7.4.9
+        - Laravel Framework 8.83.8
+        - mysql:8.0.26
