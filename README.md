@@ -2,7 +2,7 @@
     - 環境構築
         - Dockerビルド
              1. git clone git@github.com:coachtech-material/laravel-docker-template.git
-             1. docker-compose up -d --build
+             2. docker-compose up -d --build
                   
         - laravel環境構築
              1. docker-compose exec php bash
@@ -16,6 +16,3 @@
         - php:7.4.9
         - Laravel Framework 8.83.8
         - mysql:8.0.26
-1. One
-2. Two
-3. Three
