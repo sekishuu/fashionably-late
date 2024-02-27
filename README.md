@@ -16,3 +16,6 @@
         - php:7.4.9
         - Laravel Framework 8.83.8
         - mysql:8.0.26
+          
+    - URL
+        - 開発環境：http://localhost/
