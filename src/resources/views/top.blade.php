@@ -38,7 +38,5 @@
             <a href="">Register</a>
         </div>
     </header>
-
 </body>
-
 </html>
